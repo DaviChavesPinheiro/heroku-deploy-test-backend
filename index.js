@@ -47,7 +47,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.use("/mangas", (req, res) => {
-    res.status(200).send("naruto")
+    res.status(200).json(process.env)
 })
 
 app.use("/", (req, res) => {
